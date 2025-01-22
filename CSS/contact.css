@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 100px; /* Tambahkan ruang di bagian atas */
+    padding-bottom: 60px; /* Ruang di bawah untuk footer */
+}
+
+.contact-container {
+    margin-top: 20px; /* Tambahkan jarak jika diperlukan untuk elemen khusus */
+}
+
+button {
+    background-color: #ff6f61; /* Warna dari variable root */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    padding: 10px 20px; /* Spasi dalam tombol */
+    font-size: 1rem; /* Ukuran font */
+    font-weight: bold; /* Teks lebih tebal */
+    cursor: pointer; /* Menampilkan pointer ketika hover */
+    transition: all 0.3s ease; /* Animasi saat hover */
+}
+
+button:hover {
+    background-color: #005b96; /* Warna berubah menjadi warna utama saat hover */
+    transform: scale(1.05); /* Sedikit memperbesar tombol saat hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+

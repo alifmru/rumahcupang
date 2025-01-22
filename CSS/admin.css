@@ -1,0 +1,318 @@
+:root {
+    --main-color: #005b96;
+    --secondary-color: #ff6f61;
+    --accent-color: #ffffff;
+    --neutral-dark: #2f4f4f;
+    --neutral-light: #d3d3d3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--neutral-light);
+    color: var(--neutral-dark);
+}
+
+.back-to-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-to-login button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+.back-to-login button:hover {
+    background-color: var(--main-color);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--accent-color);
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.main-content h1 {
+    margin-bottom: 20px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid var(--neutral-dark);
+    padding: 10px;
+    text-align: left;
+}
+
+.product-table th {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}
+
+.product-table tr:nth-child(even) {
+    background-color: var(--neutral-light);
+}
+
+.product-table tr:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+}
+
+.chart-container {
+    margin-top: 20px;
+    background: var(--accent-color);
+    border: 1px solid var(--neutral-dark);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.back-to-login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-to-login button {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.back-to-login button:hover {
+    background-color: var(--main-color);
+}
+
+.add-product {
+    margin-bottom: 20px;
+}
+
+.add-product button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add-product button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* CSS untuk Pop-Up Form */
+.popup-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.form-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-actions button[type="submit"] {
+    background-color: #005b96;
+    color: white;
+}
+
+.form-actions button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.form-actions button:hover {
+    opacity: 0.9;
+}
+
+/* CSS untuk Notifikasi Sukses */
+.success-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.success-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.success-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.success-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.success-container button:hover {
+    opacity: 0.9;
+}
+
+/* CSS untuk tombol Edit dan Delete */
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol Edit (hijau) */
+button:nth-child(1) {
+    background-color: #28a745; /* Hijau */
+}
+
+button:nth-child(1):hover {
+    background-color: #218838; /* Hijau lebih gelap saat hover */
+}
+
+/* Tombol Delete (merah) */
+button:nth-child(2) {
+    background-color: #dc3545; /* Merah */
+}
+
+button:nth-child(2):hover {
+    background-color: #c82333; /* Merah lebih gelap saat hover */
+}
+
+/* Pastikan tombol 'Tambah Data' tidak terpengaruh */
+.add-product button {
+    background-color: var(--main-color);
+}
+
+.add-product button:hover {
+    background-color: var(--secondary-color);
+}
+
+.product-table td {
+    text-align: center;  /* Memusatkan konten dalam tabel */
+    vertical-align: middle;  /* Menyusun tombol secara vertikal di tengah */
+    padding: 10px;
+}

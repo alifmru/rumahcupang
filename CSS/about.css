@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --main-color: #005b96;        
+    --secondary-color: #ff6f61;   
+    --accent-color: #ffffff;     
+    --neutral-dark: #2f4f4f;      
+    --neutral-light: #d3d3d3; 
+}
+
+section{
+    padding: 50px 10%;
+}
+
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+
+img {
+    width: 100%;
+    margin-left: 50px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 9px 9%;
+    transition: 0.2s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 6px 10px;
+    color: var(--main-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: var(--secondary-color);
+}
+
+.navbar .login-button {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    padding: 6px 15px;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.navbar .login-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #f3e5f5;
+    gap: 1rem;
+}
+
+.home-text {
+    flex-wrap: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+    margin-top: 20px; 
+    margin-left: 0;
+}
+
+.home-img img {
+    animation: animate 3s infinite;
+}
+
+@keyframes animate{
+   0%{
+    transform: translate(-11px, 0);
+   } 
+   50%{
+    transform: translate(0px, -11px);
+   } 
+   100%{
+    transform: translate(-11px, 0);
+   } 
+}
+
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.home-text h1 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.home-text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 7px 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 40px;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.btn:hover{
+    color: #fff;
+    background: var(--main-color);
+}
+
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+/* Styling untuk body halaman About */
+body.about-page {
+    background-color: #f0f8ff; /* Warna latar belakang biru muda */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 50px auto; /* Pusatkan kontainer */
+    padding: 25px;
+    background-color: #ffffff; /* Warna putih untuk latar kontainer */
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+    text-align: center; /* Teks rata tengah */
+}
+
+.about-container h1 {
+    color: #003366; /* Warna biru tua */
+    font-size: 2.5rem; /* Ukuran font besar */
+    font-weight: 900; /* Ketebalan maksimal untuk heading */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Ubah teks menjadi huruf besar */
+    letter-spacing: 2px; /* Spasi antarhuruf untuk efek rapi */
+}
+
+.about-container p {
+    color: #333333; /* Warna abu-abu gelap */
+    font-size: 1.2rem; /* Ukuran font lebih besar */
+    font-weight: 600; /* Ketebalan sedang untuk paragraf */
+    line-height: 1.8; /* Jarak antarbaris untuk kenyamanan membaca */
+    margin-bottom: 20px;
+    text-align: justify; /* Paragraf rata kiri-kanan */
+}
+
+.about-container p span {
+    color: #005b96; /* Warna biru untuk menonjolkan bagian penting */
+    font-weight: 700; /* Ketebalan lebih untuk teks yang disorot */
+}
+
+/* CSS untuk Team Section */
+.team-section {
+    background-color: #f7f9fc;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.team-section h1 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center; /* Memastikan kartu berada di tengah */
+    gap: 20px;
+    padding: 20px 0;
+    overflow-x: auto; /* Membuat slider jika konten melebihi layar */
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) #f7f9fc;
+}
+
+.team-cards::-webkit-scrollbar {
+    height: 8px;
+}
+
+.team-cards::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+.team-cards::-webkit-scrollbar-track {
+    background: #f7f9fc;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--neutral-dark);
+}
