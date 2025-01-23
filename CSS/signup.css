@@ -36,19 +36,13 @@
       font-size: 15px;
   }
 
-  form .content {
-      flex-direction: column;
-      height: auto;
-      align-items: flex-start;
-  }
-
-  form .content .checkbox {
-      margin-bottom: 10px;
-  }
-
   form .field input[type="submit"] {
       font-size: 18px;
       padding: 10px;
+  }
+
+  form .error-message {
+      font-size: 14px;
   }
 }
 
